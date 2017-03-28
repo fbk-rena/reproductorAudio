@@ -3,28 +3,41 @@
 <html>
 
 <head>
-    <title>This Is How We Do</title>
+    <title>KatyCat Audio Player</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+    html {
+        height:100%;
+        width:50%;
+    }
+    body{
+        background: url('http://s3.favim.com/610/141125/hudson-katy-perry-katycat-prism-Favim.com-2263333.jpg') no-repeat left center;
+        background-size:100% 100%;
+    }
+    </style>
 </head>
 
 
 <body>
+    
+    <header>
+        <img src="assets/j0v4tu.jpg">
+    </header>
+    
     <audio id="playlist">
         <source src="assets/Katy Perry - This Is How We Do.mp3" type="audio/mpeg">
-        
     </audio>
-
-    <button id="playBtn" onclick="play()">Play</button>
-    <button id="pauseBtn" onclick="pause()">Pause</button>
-    <button id="stopBtn" onclick="stop()">Stop</button>
-    <button id="volUp" onclick="volumenUp()">Vol +</button>
-    <button id="volDown" onclick="volumenDown()">Vol -</button>
-    <button id="bwd" onclick="backward()"><<<<<</button>
-    <button id="fwd" onclick="forward()">>>>>></button>
     
-        
-    
+    <button id="playBtn" onclick="play()"><img name="Play" src="assets/1490699185_audio-video-outline-play.png "></button>
+    <button id="pauseBtn" onclick="pause()"><img name="Pause" src="assets/1490699295_audio-video-outline-pause.png"></button>
+    <button id="stopBtn" onclick="stop()"><img name="Stop" src="assets/1490699304_audio-video-outline-stop.png"></button>
+    <button id="bwd" onclick="backward()"><img name="Rewind" src="assets/1490699317_audio-video-outline-rewind.png"></button>
+    <button id="fwd" onclick="forward()"><img name="Forward" src="assets/1490699324_audio-video-outline-forward.png"></button>
+    <br/>
+    <button id="vol"><img name="Volumen" src="assets/1490700045_audio-video-outline-audio.png"></button>
+    <button id="volUp" onclick="volumenUp()"><img name="Volumen +" src="assets/1490700032_add.png"></button>
+    <button id="volDown" onclick="volumenDown()"><img name="Volumen -" src="assets/1490700025_less.png"></button>
 
     <script language="javascript" src="js/main.js"></script>
 </body>
