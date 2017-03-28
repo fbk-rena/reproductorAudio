@@ -1,10 +1,6 @@
 
 var music = document.getElementById("playlist")
 
-function myFunction() {
-    document.body.style.backgroundImage = "url(http://s3.favim.com/610/141125/hudson-katy-perry-katycat-prism-Favim.com-2263333.jpg)";
-}
-
 function play(){
     music.play();
 }
