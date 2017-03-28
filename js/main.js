@@ -32,4 +32,8 @@ function backward(){
 function forward(){
     music.currentTime += 5;
 }
-  
+
+music.ontimeupdate = function() {
+    var barraProgreso = document.getElementById("barra");
+    barraProgreso.value = music.currentTime;
+};
